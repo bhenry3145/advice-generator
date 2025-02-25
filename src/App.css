@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Manrope;
+  src: url('./assets/fonts/Manrope-VariableFont_wght.ttf');
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Manrope;
+}
+
+.dice {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-dice {
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-dice:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px hsl(150, 100%, 66%);
+}
+
+.advice-text {
+  color: hsl(150, 100%, 66%);
+  font-size: 11px;
+}
+
+.quote {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+
+.quote-box {
+  background-color: hsl(217, 19%, 24%);
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.button-wrapper {
+  position: absolute;
+  bottom: -35px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 376px) {
+  .quote-box {
+    width: 350px;
+  }
+}
